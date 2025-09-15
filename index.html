@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Krzysztof Leśniewski</title>
+
+  <!-- Uwaga: JEŚLI to jest projekt pod ścieżką /lesniewskik/ na GitHub Pages,
+       możesz odkomentować bazę: -->
+  <!-- <base href="/lesniewskik/"> -->
+
+  <link rel="stylesheet" href="main.css" />
+
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script>
+    MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+  </script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">Krzysztof Leśniewski</h1>
+    <p class="site-subtitle">Matematyka • Analiza • Optymalizacja</p>
+  </header>
+
+  <nav class="site-nav">
+    <ul>
+      <li><a href="analiza-mini2.html">Analiza — do poczytania</a></li>
+      <li><a href="https://1drv.ms/f/s!Amza0q5wjUyNgc14zwWl6u3LFDd3Zw?e=gEP4LU">DDE (NEW)</a></li>
+      <li><a href="DDE.html">DDE (OLD)</a></li>
+      <li><a href="https://1drv.ms/f/s!Amza0q5wjUyNgc15ik32yVouH-sDQA?e=bpPELh">Analiza I — stacjonarne WIL</a></li>
+      <li><a href="https://1drv.ms/f/s!Amza0q5wjUyNgc1JRomNFHlhP9C_Dg?e=SGXQw8">Analiza I — zadania WIL</a></li>
+      <li><a href="https://1drv.ms/u/s!Amza0q5wjUyNgaUdr5i74CyqVB1BKg?e=xmRhZC">Analiza I — niestacjonarne WIL</a></li>
+      <li><a href="#">Calculus I</a></li>
+      <li><a href="https://www.researchgate.net/profile/Krzysztof_Lesniewski2">Articles</a></li>
+      <!-- przykładowy PDF trzymany lokalnie w repo: -->
+      <li><a href="pdfs/zadania01.pdf">Zadania 01 (PDF)</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="blurb">
+      <h2>Witaj!</h2>
+      <p>
+        Tu będą materiały do zajęć, zadania (PDF), krótkie notatki z LaTeX-em
+        i odnośniki. Przykład wzoru:
+      </p>
+      <p>
+        $$ \nabla f(x^*) = 0,\quad H_f(x^*) \succeq 0. $$
+      </p>
+    </section>
+
+    <section class="contacts">
+      <h3>Kontakt</h3>
+      <p>
+        <a href="mailto:k.lesniewski">k.lesniewski</a> ·
+        <a href="https://mini.pw.edu.pl">mini.pw.edu.pl</a> ·
+        <a href="http://www.ibspan.waw.pl/">ibspan.waw.pl</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> Krzysztof Leśniewski</small>
+  </footer>
+
+  <script>
+    // Rok w stopce
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
