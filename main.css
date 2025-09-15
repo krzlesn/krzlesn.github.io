@@ -15,10 +15,7 @@
 html, body{ margin:0; padding:0; }
 
 body{
-  background:
-    radial-gradient(80vw 60vh at 110% -10%, #eaf0f5 0%, transparent 50%),
-    radial-gradient(60vw 50vh at -10% 0%, #eef3f7 0%, transparent 55%),
-    var(--bg);
+  background: var(--bg);
   color: var(--fg);
   font: 16px/1.6 system-ui, -apple-system, "SF Pro Text", Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
